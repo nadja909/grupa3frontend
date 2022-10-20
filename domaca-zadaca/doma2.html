@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pošaljite upit</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Gilda+Display&display=swap"
+    />
+  </head>
+  <body>
+    <div>
+      <h3>Pošaljite upit</h3>
+      <form method="POST" action="mail.php">
+        <!-- form message -->
+        <div
+          class="alert alert-success contact__msg"
+          style="display: none"
+          role="alert"
+        >
+          Poruka je uspješno poslana.
+        </div>
+        <!-- form elements -->
+        <div>
+          <div>
+            <input
+              name="name"
+              type="text"
+              placeholder="Ime i prezime *"
+              required
+            />
+          </div>
+          <br />
+          <div>
+            <input name="email" type="email" placeholder="E-mail *" required />
+          </div>
+          <br />
+          <div>
+            <input
+              name="phone"
+              type="text"
+              placeholder="Broj telefona *"
+              required
+            />
+          </div>
+          <br />
+          <div>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="4"
+              placeholder="Poruka *"
+              required
+            ></textarea>
+          </div>
+          <br />
+          <div>
+            <button class="butn-dark">
+              <a href="mailto:mirjana.nadj@outlook.com"><span>Pošalji</span></a>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
