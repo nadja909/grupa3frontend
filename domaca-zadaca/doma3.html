@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upitnik zadovoljstva</title>
+  </head>
+  <body>
+    <h1 style="color: rgb(92, 92, 207)">Upitnik zadovoljstva zaposlenika</h1>
+    <h4>Napomena:</h4>
+    <p>
+      U nastavku se nalaze pitanja koja sadrže osobne podatke.
+      <br />
+      Koristiti će se isključivo u svrhu provođenja ovog istraživanje te
+      obrisati nakon šest mjeseci.
+    </p>
+    <br />
+    <!-- Forms -->
+
+    <form>
+      <h3 style="color: rgb(92, 92, 207)">Osnovni podaci</h3>
+      <label for="name">Ime*: </label>
+      <input type="text" id="name" name="name" placeholder="Ana" required />
+      <br />
+      <br />
+      <label for="surname">Prezime*: </label>
+      <input
+        type="text"
+        id="surname"
+        name="surname"
+        placeholder="Horvat"
+        required
+      />
+      <br /><br />
+      <input type="hidden" id="employerId" name="employerId" value="12457" />
+
+      <label for="linkedin">Linkedin profil:</label>
+      <input type="url" name="linkedin" id="linkedin" />
+      <br /><br />
+      <br />
+      <h3 style="color: rgb(92, 92, 207)">Kontakt podaci</h3>
+      <label for="phone">Broj telefona: </label>
+      <input name="phone" type="tel" placeholder="+385 91 1234 567" />
+      <br />
+      <br />
+      <label for="email">Službeni e-mail: </label>
+      <input name="email" type="email" placeholder="ime.prezime@coca-cola.hr" />
+      <br />
+      <br />
+      <br />
+      <h3 style="color: rgb(92, 92, 207)">Osobni podaci</h3>
+      <label for="date">Datum rođenja: </label>
+      <input name="date" type="date" />
+      <br />
+      <br />
+      <label for="gender">Spol: </label>
+      <br />
+      <input type="radio" name="gender" id="male" value="m" />
+      <label for="male">Muški</label><br />
+      <input type="radio" name="gender" id="female" value="f" />
+      <label for="female">Ženski</label><br />
+      <input type="radio" name="gender" id="unindentified" value="x" />
+      <label for="unindentified">Ne želim se izjasniti</label>
+      <br />
+      <br />
+      <br />
+      <h3 style="color: rgb(92, 92, 207)">
+        Mišljenje zaposlenika i prijedlozi
+      </h3>
+      <label for="open-q"
+        >Navedite što smatrate benefitima rada u našoj kompaniji:</label
+      >
+      <br />
+      <textarea name="benfits" id="benefits" cols="50" rows="6"></textarea>
+
+      <br />
+      <br />
+      <label for="open-q"
+        >Navedite što biste željeli poboljšati u našoj kompaniji:</label
+      >
+      <br />
+      <textarea name="upgrade" id="upgrade" cols="50" rows="6"></textarea>
+      <br />
+      <br />
+      <label for="range">Ocijeni zadovoljstvo rada u kompaniji</label>
+      <input type="range" name="range" value="1-10" />
+      <br /><br />
+      <label for="office">Ocijeni izled ureda od 1 do 5: </label>
+      <input name="office" type="number" maxlength="5" />
+      <br /><br />
+      <label for="team-building"
+        >Predloži tjedan i mjesec za time-building:
+      </label>
+      <input type="week" name="week" id="week" />
+      <input type="month" name="month" id="month" />
+
+      <br /><br />
+      <label for="color-picker"
+        >Koju boju stolica biste predložili za naše urede:
+      </label>
+      <input type="color" name="color-picker" id="color-picker" />
+      <br />
+      <br />
+      <br />
+      <h3 style="color: rgb(92, 92, 207)">Dokumentacija</h3>
+      <label for="file">Priloži dokument s potrvdom zaštite na radu: </label>
+      <input
+        type="file"
+        name="file"
+        accept=".jpg, .png, .jepg, .pdf"
+        id="work-safety"
+      />
+      <p>Dozvoljeni formati: jpg, jpeg, png, pdf</p>
+      <br />
+      <br />
+      <h3 style="color: rgb(92, 92, 207)">Zaštita podataka</h3>
+      <input name="gdpr" type="checkbox" required />
+      <label for="gdpr"
+        >Pristajem na korištenje mojih osobnih podataka u svrhu obrade
+        upitnika.*</label
+      >
+      <br />
+      <br />
+      <label for="date-time">Datum i vrijeme: </label>
+      <input name="date-time" type="datetime-local" />
+      <br /><br /><br />
+      <input type="reset" value="Obriši sve" style="font-size: 17px" /> &nbsp;
+      &nbsp;
+      <input type="submit" value="Podnesi" style="font-size: 17px" />
+      <br /><br /><br />
+    </form>
+  </body>
+</html>
