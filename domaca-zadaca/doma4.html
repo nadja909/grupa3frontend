@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nogometna utakmica</title>
+    <style>
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="picture dinamo-milan.svg" alt="dinamo milan" class="center" />
+
+    <h1 style="text-align: center">Nogometna utakmica</h1>
+    <h2 style="text-align: center">Dinamo - Milan</h2>
+    <img src="./dinamo-grb.svg" alt="dinamo grb" height="500" width="500" />
+    <br />
+    <canvas
+      id="myCanvas"
+      width="280"
+      height="120"
+      style="border: 1px solid #d3d3d3"
+    >
+      Your browser does not support the canvas element.
+    </canvas>
+    <script>
+      var canvas = document.getElementById("myCanvas");
+      var ctx = canvas.getContext("2d");
+      ctx.font = "40px Calibri";
+      ctx.strokeText("Dinamo - Milan", 10, 50);
+      ctx.strokeText("1 - 0", 80, 90);
+    </script>
+    <br />
+    <br />
+
+    <h2 style="color: rgb(65, 65, 206)">Utjeha navijačima Milana</h2>
+    <audio contols muted preload="metadata">
+      <source src="./milan.mp3" />
+    </audio>
+    <br />
+    <video controls muted preload="metadata" height="300" width="550">
+      <source src="./milan-video.mp4" />
+    </video>
+  </body>
+</html>
